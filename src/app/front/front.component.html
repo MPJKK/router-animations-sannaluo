@@ -2,7 +2,7 @@
   <div *ngFor="let media of mediaArray" class="li">
     <mat-grid-list cols="3" rowHeight="2:1">
       <mat-card class="card">
-        <img mat-card-image [src]="mediaService.mediaUrl + media.thumbnail" [alt]="media.title">
+        <img mat-card-image [src]="mediaService.mediaUrl + (media.filename | thumbnail: 'medium') " [alt]="media.title">
         <mat-card-content>
           <h3>{{ media.title }}</h3>
           <p>{{ media.description }}</p>

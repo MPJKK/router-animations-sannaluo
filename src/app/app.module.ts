@@ -20,6 +20,7 @@ import {
   MatIconModule, MatInputModule, MatListModule, MatNavList, MatSidenavModule,
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ThumbnailPipe } from './pipes/thumbnail.pipe';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     LoginComponent,
     LogoutComponent,
     UploadComponent,
+    ThumbnailPipe,
   ],
   imports: [
     BrowserModule,
