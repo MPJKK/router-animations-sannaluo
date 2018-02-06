@@ -1,19 +1,8 @@
-<nav>
-  <ul>
-    <li>
-      <a [routerLink] = "'/register'">Register</a>
-    </li>
-    <li>
-      <a [routerLink] = "'/login'">Login</a>
-    </li>
-    <li>
-      <a [routerLink] = "'/logout'">Logout</a>
-    </li>
-    <li>
-      <a [routerLink] = "'/front'">Front page</a>
-    </li>
-    <li>
-      <a [routerLink] = "'/upload'">Upload</a>
-    </li>
-  </ul>
-</nav>
+
+<mat-nav-list>
+  <a mat-list-item  [routerLink] = "'/register'">Register</a>
+  <a mat-list-item  [routerLink] = "'/login'">Login</a>
+  <a mat-list-item [routerLink] = "'/logout'">Logout</a>
+  <a mat-list-item [routerLink] = "'/front'">Front page</a>
+  <a mat-list-item [routerLink] = "'/upload'">Upload</a>
+</mat-nav-list>

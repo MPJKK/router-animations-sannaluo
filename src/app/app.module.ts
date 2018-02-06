@@ -13,6 +13,13 @@ import {UploadComponent} from './upload/upload.component';
 import {MediaService} from './services/media.service';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {
+  MatButtonModule, MatCardModule,
+  MatDrawer, MatDrawerContainer, MatFormFieldModule, MatGridList,
+  MatGridListModule,
+  MatIconModule, MatInputModule, MatListModule, MatNavList, MatSidenavModule,
+} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +35,16 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-      FormsModule // tää on tärkee aina kun mikään formi/input
+      FormsModule, // tää on tärkee aina kun mikään formi/input
+      MatGridListModule,
+      BrowserAnimationsModule,
+      MatIconModule,
+      MatSidenavModule,
+      MatListModule,
+      MatFormFieldModule,
+      MatInputModule,
+      MatButtonModule,
+      MatCardModule
   ],
   providers: [MediaService],
   bootstrap: [AppComponent],

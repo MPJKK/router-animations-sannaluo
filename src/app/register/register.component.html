@@ -1,11 +1,19 @@
 <form (submit)="register()">
-  <input [(ngModel)]="user.username" type="text" name="username" placeholder="username">
+  <mat-form-field>
+    <input matInput [(ngModel)]="user.username" type="text" name="username" placeholder="username">
+  </mat-form-field>
+    <br>
+    <mat-form-field>
+    <input matInput [(ngModel)]="user.password" type="password" name="password" placeholder="password">
+  </mat-form-field>
+    <br>
+    <mat-form-field>
+    <input matInput [(ngModel)]="user.email" type="text" name="email" placeholder="email">
+  </mat-form-field>
+    <br>
+    <mat-form-field>
+    <input matInput [(ngModel)]="user.full_name" type="text" name="full_name" placeholder="full name (optional)">
+  </mat-form-field>
   <br>
-  <input [(ngModel)]="user.password" type="password" name="password" placeholder="password">
-  <br>
-  <input [(ngModel)]="user.email" type="text" name="email" placeholder="email">
-  <br>
-  <input [(ngModel)]="user.full_name" type="text" name="full_name" placeholder="full name (optional)">
-  <br>
-  <button type="submit">Register</button>
+  <button mat-button type="submit">Register</button>
 </form>
