@@ -1,14 +1,22 @@
 <form (submit)="uploadFile()">
 
-  <mat-form-field class="fileInput">
-    <input matInput type="file" name="file" (change)="setFile($event)" class="ng-hide" id="input-file-id">
-    <label class="fileLabel" for="input-file-id" ><i class="material-icons">folder</i> Choose a file</label>
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput [(ngModel)]="file.title" name="title" placeholder="title">
-  </mat-form-field>
-  <mat-form-field>
-    <textarea matInput [(ngModel)]="file.description" name="description" placeholder="optional description"></textarea>
-  </mat-form-field>
-  <button mat-button>Upload</button>
+ <!-- <mat-form-field class="fileInput"> -->
+  <div class="align">
+    <i class="material-icons">folder</i>
+    <input type="file" name="file" (change)="setFile($event)" class="ng-hide" id="input-file-id">
+    <label class="fileLabel" for="input-file-id" > Choose a file</label>
+  </div>
+ <!-- </mat-form-field>
+  <mat-form-field> -->
+    <input [(ngModel)]="file.title" name="title" placeholder="title">
+  <!-- </mat-form-field>
+  <mat-form-field> -->
+  <div>
+    <i class="material-icons">mode_edit</i>
+    <textarea  [(ngModel)]="file.description" name="description"></textarea>
+  </div>
+ <!-- </mat-form-field> -->
+  <button>Upload</button>
 </form>
+
+<!-- material ei toimi tässä :( -->

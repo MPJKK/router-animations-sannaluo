@@ -1,3 +1,20 @@
 form {
   text-align: center;
 }
+:host {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  main {
+    position: relative;
+  }
+  /deep/ router-outlet ~ * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+button {
+  border: rgb(186, 186, 186) 1px solid;
+
+}

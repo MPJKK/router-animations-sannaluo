@@ -2,8 +2,8 @@
   <mat-sidenav mode="side" opened>
     <app-top-bar></app-top-bar>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <router-outlet></router-outlet>
+  <mat-sidenav-content  [@fadeAnimation]="getRouterOutletState(o)">
+    <router-outlet #o="outlet"></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
 

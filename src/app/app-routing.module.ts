@@ -15,22 +15,27 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+    data: { state: 'login' }
   },
   {
     path: 'register',
     component: RegisterComponent,
+    data: { state: 'register' }
   },
   {
     path: 'logout',
     component: LogoutComponent,
+    data: { state: 'logout' }
   },
   {
     path: 'front',
     component: FrontComponent,
+    data: { state: 'front' }
   },
   {
     path: 'upload',
     component: UploadComponent,
+    data: { state: 'upload' }
   },
 ];
 
